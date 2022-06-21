@@ -1,0 +1,14 @@
+#footer{
+    display: grid;
+    color:white;
+    font-size: 30px;
+    height:100px;
+    padding-left: 760px;
+    height: 50px;
+    white-space:nowrap;
+  }
+
+#footer a{
+  text-decoration: none;
+  color: white;
+}
