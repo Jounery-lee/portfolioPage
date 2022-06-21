@@ -21,4 +21,5 @@
 9.만들어진 루트 경로의 package.json에 'scripts' 안 start에 차곡차곡 스크립트를 작성 해 주면 된다. 헤로쿠에서는 60초안에 모든 작업을 마치고 7번 코드를 실행해야 하는데 60초가 넘어버리는 경우에는 start명령 앞에 heroku-prebuild안에 작성하면 미리 실행을 시켜준다. 만약 여유가 없다면 1~4를 prebuild에 넣어둘것.
 
 *cd client && cd server => '&&'는 앞에 스크립트 후 다음 작업이라는 뜻.
-*build폴더도 깃으로 관리 될 필요 없으니 빼둔다.
+
+10.github에 push한 repository를 헤로쿠에 올릴거기 떄문에 github로 업로드.
