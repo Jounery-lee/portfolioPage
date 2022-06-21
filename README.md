@@ -23,3 +23,14 @@
 *cd client && cd server => '&&'는 앞에 스크립트 후 다음 작업이라는 뜻.
 
 10.github에 push한 repository를 헤로쿠에 올릴거기 떄문에 github로 업로드.
+
+
+///////////////////////////////////////////////////
+
+RESTful API 규칙
+
+1.URL에는 동사를 사용하지 않는다! (no verb!) 동사는 GET POST PUT DELETE 등
+
+2.URL에는 2가지 종류의 명사가 들어가게 된다. 컬렉션(Collection)과 고유식별자(Unique identifire). 컬렉션은 복수 -s, 식별자는 단수로 활용한다. ex) Movies/thor3
+
+3.이렇게 하면 GET/movies => 영화들을 불러와라 POST/movies =>영화들을 생성해라와 같이 같은 URL과 다른 Method로 구분하기 쉽게 됨. 또한 DELETE와 PUT은 movies와 같이 쓰지 않는다. 모든 영화를 삭제하거나 업데이트 할 일은 없기 때문이다. DELETE/movies/thor3 와 같이 고유식별자를 같이 쓰게 된다.

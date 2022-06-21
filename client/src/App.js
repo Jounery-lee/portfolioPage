@@ -21,7 +21,7 @@ function App() {
   window.addEventListener("load", onLoad);
   
   async function onLoad(event) {
-    const fetchedData = await fetch("http://localhost:5000");
+    const fetchedData = await fetch("http://localhost:5000/topics");
     const body = await fetchedData.json();
     setData(current => body)
   }

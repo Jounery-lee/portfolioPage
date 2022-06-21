@@ -17,6 +17,9 @@ app.use(express.static('build'))
 app.get("/", (req, res) => {
   res.sendFile(__dirname + '/build/index.html')
 });
+app.get("/topics", (req,res) => {
+  res.send(db)
+})
 app.listen(port, () => {
-  console.log(`on ${port}`);
+  console.log(`server is on ${port}`);
 });
