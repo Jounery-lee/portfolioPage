@@ -4,12 +4,12 @@ const port = process.env.PORT || 5000;
 const cors = require('cors')
 
 const db = [
-  { id: "1", title: "지금 이 페이지 입니다.", desc: "리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트리액트액트리액트리액트리액트리액트리액트리액트리액트" },
-  { id: "2", title: "음악장르별 추천 페이지 입니다.", desc: "리액트와 Express를 사용했습니다. 주소 http://localhost:1293" },
-  { id: "3", title: "단위 변환기로부터 시작한 환율 계신가입니다.", desc: "순수한 JavaScript로만 구성했습니다." },
-  { id: "4", title: "4 topic", desc: "im the 4" },
-  { id: "5", title: "5 topic", desc: "im the 5" },
-  { id: "6", title: "6 topic", desc: "im the 6" },
+  { id: "1", title: 'Misic', desc: "https://jounery-lee.github.io/ME-SIC/"},
+  { id: "2", title: "지금 이 페이지 입니다.", desc: "https://jounery-lee.github.io/Profile/" },
+  { id: "3", title: "음악장르별 추천 페이지 입니다.", desc: "https://jounery-lee.github.io/CloneCoding_voyagerx/" },
+  { id: "4", title: "단위 변환기로부터 시작한 환율 계신가입니다.", desc: "https://jounery-lee.github.io/Findingmines/" },
+  { id: "5", title: "4 topic", desc: "https://jounery-lee.github.io/myTodoList/?" },
+  { id: "6", title: "5 topic", desc: "im the 5" }
 ];
 
 app.use(cors());
@@ -23,3 +23,6 @@ app.get("/topics", (req,res) => {
 app.listen(port, () => {
   console.log(`server is on ${port}`);
 });
+
+//1. 로그인기능 ( 나와 손님으로 구분 나는 글쓰기 손님은 댓글 달기 가능)
+//2. 1에서 적었듯 글쓰기 기능과 댓글 달기 기능. 글쓰기 기능은 6가지 프로젝트 업로드 기능으로 만들기.

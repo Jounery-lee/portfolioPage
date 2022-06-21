@@ -56,7 +56,7 @@ function Body({ data }) {
         style={{ opacity: isClicked, zIndex: zindex }}
         onClick={onClick}
       >
-        {content}
+        <a href={content}>{content}</a>
       </div>
       <button id={style.leftBtn} onClick={clickLeft}>
         왼쪽
