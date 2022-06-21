@@ -21,7 +21,8 @@ function App() {
   window.addEventListener("load", onLoad);
   
   async function onLoad(event) {
-    const fetchedData = await fetch("http://localhost:5000/topics");
+    //https://portfolio-react-express-juyeon.herokuapp.com/ 배포 URL
+    const fetchedData = await fetch("https://portfolio-react-express-juyeon.herokuapp.com/topics");
     const body = await fetchedData.json();
     setData(current => body)
   }
