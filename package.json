@@ -4,8 +4,8 @@
   "description": "자동 배포 프로세스",
   "main": "index.js",
   "scripts": {
-    "heroku-prebuild": "cd client && npm ci && npm run build && mv build ../server",
-    "start": "cd ../server && npm ci && node app.js",
+    "heroku-prebuild": "cd client && npm ci && npm run build && mv build ../server && cd ../",
+    "start": "cd server && npm ci && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
