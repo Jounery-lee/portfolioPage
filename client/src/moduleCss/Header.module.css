@@ -9,7 +9,7 @@
 
 .a {
   text-decoration: none;
-  color: #73777b;
+  color: white;
   position: relative;
   transition: 1s;
 }
@@ -29,4 +29,12 @@
 #login {
   position: relative;
   left: 1150px;
+}
+
+
+@media(max-width : 1500px){
+  #login {
+    position: relative;
+    left: 350px;
+  }
 }

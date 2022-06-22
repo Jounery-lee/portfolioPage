@@ -11,9 +11,10 @@ function Topics({ id, onClick, title }) {
   );
 }
 
+
 /* App.js로 넘어가는 Body Component */
 
-function Body({ data }) {
+function Body({ data , scrollTop}) {
   // 나중에 화면이동 시킬때 사용할 버튼 두개.
   function clickLeft() {
     console.log("leftClick");
@@ -24,7 +25,6 @@ function Body({ data }) {
   const [isClicked, setIsClicked] = useState("0%");
   const [content, setContent] = useState();
   const [zindex, setZindex] = useState(-1);
-
 
   function onClick(event) {
     if (isClicked === "0%") {
@@ -53,7 +53,7 @@ function Body({ data }) {
       </div>
       <div
         id={style.clickedBody}
-        style={{ opacity: isClicked, zIndex: zindex }}
+        style={{ opacity: isClicked, zIndex: zindex, top: window.innerWidth >800 ? scrollTop-800 : scrollTop-1200}}
         onClick={onClick}
       >
         <a href={content}>{content}</a>

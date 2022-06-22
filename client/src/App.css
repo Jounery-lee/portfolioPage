@@ -1,4 +1,10 @@
 .App{
   background-color: black;
+  width:1680px;
 }
 
+@media(max-width:800px){
+  .App{
+    width: 920px;
+  }
+}

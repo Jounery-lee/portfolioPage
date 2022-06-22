@@ -6,9 +6,17 @@
     padding-left: 760px;
     height: 50px;
     white-space:nowrap;
+    background-image: linear-gradient(black, #15133c);
   }
 
 #footer a{
   text-decoration: none;
   color: white;
+}
+
+@media(max-width:800px){
+  #footer{
+    padding-left: 310px;
+    margin-top: 100px;
+  }
 }
