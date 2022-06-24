@@ -39,7 +39,7 @@ function Body({ data , scrollTop}) {
   }
 
   return (
-    <div style={{height : 1500}}>
+    <div style={{height : window.innerWidth > 375 ? 1500 : 800}}>
       <div id={style.body}>
         <div className={style.bodyTitle}>
           <h1>음악과 프로그래밍, 이주연입니다.</h1>
