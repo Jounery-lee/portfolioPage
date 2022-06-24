@@ -34,7 +34,6 @@ function Body({ data, scrollTop }) {
       setDesc(data[Number(id)].desc);
       setTitle(data[Number(id)].title);
       setUrl(data[Number(id)].url);
-      console.log(url)
       setZindex(1);
     } else {
       setIsClicked("0%");

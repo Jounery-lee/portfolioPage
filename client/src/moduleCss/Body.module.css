@@ -58,7 +58,8 @@
     padding-left: 40px;
     grid-template-columns: 130px 130px;
     grid-template-rows: 150px 130px 130px 130px;
-    gap: 40px;  
+    gap: 40px;
+    top: 100px;
   }
 
   #body div {

@@ -6,7 +6,7 @@ const cors = require("cors");
 const db = [
   {
     id: "1",
-    title: "랜덤음악제공 Misic",
+    title: "랜덤음악제공 ME:sic",
     url: "https://jounery-lee.github.io/ME-SIC/",
     desc: "음악의 풀을 넓히는 작업 필요 데이터 크롤링? 그런걸로 좀 데이터를 구축하는 방식으로 연구해보자.",
   },
@@ -14,7 +14,7 @@ const db = [
     id: "2",
     title: "이주연 프로필.",
     url: "https://jounery-lee.github.io/Profile/",
-    desc: "프로필은 더 할게 있나? 점검 후 도장 찍을 준비",
+    desc: "프로필 페이지입니다. (완)",
   },
   {
     id: "3",
@@ -32,7 +32,7 @@ const db = [
     id: "5",
     title: "To Do list",
     url: "https://jounery-lee.github.io/myTodoList/?",
-    desc: "더 할게 없음. 도장찍을 준비.",
+    desc: "로직이 뭔가 문제가 있는듯 로그아웃 로그인이 한번에 안되고 몇번씩 기다려야 하네.",
   },
   { id: "6", title: "5 topic", url: "im the 5", desc: "아직 비었습니다." },
 ];

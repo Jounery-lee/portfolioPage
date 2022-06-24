@@ -6,5 +6,6 @@
 @media(max-width:375px){
   .App{
     width: 375px;
+    height: 800px;
   }
 }

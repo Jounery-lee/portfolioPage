@@ -12,7 +12,7 @@ function App() {
 
   function topMenuShow(event) {
     if (event.deltaY < 0) {
-      setTopMenuHeight(100);
+      setTopMenuHeight(80);
       setMenyAtagTop(25);
     } else {
       setTopMenuHeight(30);
