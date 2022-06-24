@@ -74,10 +74,13 @@
   border-image: linear-gradient(to right, red, orange);
   border-image-slice: 1;
   padding: 50px;
-  font-size: 20px;
+  font-size: 10px;
   left: 35px;
   width: 200px;
   height: 200px;
   overflow-y: auto;
+}
+#clickedBody a{
+  text-decoration: none;
 }
 }

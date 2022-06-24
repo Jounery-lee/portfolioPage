@@ -4,11 +4,11 @@ const port = process.env.PORT || 5000;
 const cors = require('cors')
 
 const db = [
-  { id: "1", title: 'Misic', desc: "https://jounery-lee.github.io/ME-SIC/"},
+  { id: "1", title: '랜덤음악제공 Misic', desc: "https://jounery-lee.github.io/ME-SIC/"},
   { id: "2", title: "지금 이 페이지 입니다.", desc: "https://jounery-lee.github.io/Profile/" },
   { id: "3", title: "음악장르별 추천 페이지 입니다.", desc: "https://jounery-lee.github.io/CloneCoding_voyagerx/" },
   { id: "4", title: "단위 변환기로부터 시작한 환율 계신가입니다.", desc: "https://jounery-lee.github.io/Findingmines/" },
-  { id: "5", title: "4 topic", desc: "https://jounery-lee.github.io/myTodoList/?" },
+  { id: "5", title: "To Do list", desc: "https://jounery-lee.github.io/myTodoList/?" },
   { id: "6", title: "5 topic", desc: "im the 5" }
 ];
 

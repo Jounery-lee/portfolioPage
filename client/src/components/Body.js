@@ -11,26 +11,27 @@ function Topics({ id, onClick, title }) {
   );
 }
 
-
 /* App.js로 넘어가는 Body Component */
 
-function Body({ data , scrollTop}) {
+function Body({ data, scrollTop }) {
   // 나중에 화면이동 시킬때 사용할 버튼 두개.
   function clickLeft() {
     console.log("leftClick");
   }
   function clickRight() {
     console.log("rightClick");
-  }     
+  }
   const [isClicked, setIsClicked] = useState("0%");
-  const [content, setContent] = useState();
+  const [title, setTitle] = useState();
+  const [desc, setDesc] = useState();
   const [zindex, setZindex] = useState(-1);
 
   function onClick(event) {
     if (isClicked === "0%") {
-     const id = event.target.id
+      const id = event.target.id;
       setIsClicked("100%");
-      setContent(data[Number(id)].desc);
+      setDesc(data[Number(id)].desc);
+      setTitle(data[Number(id)].title);
       setZindex(1);
     } else {
       setIsClicked("0%");
@@ -39,7 +40,7 @@ function Body({ data , scrollTop}) {
   }
 
   return (
-    <div style={{height : window.innerWidth > 375 ? 1500 : 800}}>
+    <div style={{ height: window.innerWidth > 375 ? 1500 : 800 }}>
       <div id={style.body}>
         <div className={style.bodyTitle}>
           <h1>음악과 프로그래밍, 이주연입니다.</h1>
@@ -53,10 +54,14 @@ function Body({ data , scrollTop}) {
       </div>
       <div
         id={style.clickedBody}
-        style={{ opacity: isClicked, zIndex: zindex, top: window.innerWidth >800 ? scrollTop-800 : scrollTop-600}}
+        style={{
+          opacity: isClicked,
+          zIndex: zindex,
+          top: window.innerWidth > 800 ? scrollTop - 800 : scrollTop - 550,
+        }}
         onClick={onClick}
       >
-        <a href={content}>{content}</a>
+        <h2><a href={desc}>{title}</a></h2>
       </div>
       <button id={style.leftBtn} onClick={clickLeft}>
         왼쪽
