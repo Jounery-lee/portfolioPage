@@ -41,8 +41,9 @@ function Body({ data, scrollTop }) {
     }
   }
 
+  
   return (
-    <div style={{ height: window.innerWidth > 375 ? 1500 : 800 }}>
+    <div style={{ height: window.innerWidth > 375 ? 1300 : 700 }}>
       <div id={style.body}>
         <div className={style.bodyTitle}>
           <h1>음악과 프로그래밍, 이주연입니다.</h1>
@@ -59,7 +60,7 @@ function Body({ data, scrollTop }) {
         style={{
           opacity: isClicked,
           zIndex: zindex,
-          top: window.innerWidth > 800 ? scrollTop - 800 : scrollTop - 550,
+          top: window.innerWidth > 800 ? scrollTop - 800 : scrollTop - 550
         }}
         onClick={onClick}
       >
