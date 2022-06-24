@@ -24,6 +24,7 @@ function Body({ data, scrollTop }) {
   const [isClicked, setIsClicked] = useState("0%");
   const [title, setTitle] = useState();
   const [desc, setDesc] = useState();
+  const [url, setUrl] = useState();
   const [zindex, setZindex] = useState(-1);
 
   function onClick(event) {
@@ -32,6 +33,8 @@ function Body({ data, scrollTop }) {
       setIsClicked("100%");
       setDesc(data[Number(id)].desc);
       setTitle(data[Number(id)].title);
+      setUrl(data[Number(id)].url);
+      console.log(url)
       setZindex(1);
     } else {
       setIsClicked("0%");
@@ -61,7 +64,8 @@ function Body({ data, scrollTop }) {
         }}
         onClick={onClick}
       >
-        <h2><a href={desc}>{title}</a></h2>
+        <h2><a href={url}>{title}</a></h2>
+        {desc}
       </div>
       <button id={style.leftBtn} onClick={clickLeft}>
         왼쪽
