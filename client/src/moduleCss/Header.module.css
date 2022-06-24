@@ -32,9 +32,28 @@
 }
 
 
-@media(max-width : 1500px){
+@media(max-width : 375px){
+  .Header {
+    font-size: 20px;
+    background-image: linear-gradient(#15133c, black);
+    transition: 1s;
+    position: fixed; 
+    width: 375px;
+  }
+  #home {
+    position: relative;
+    left: 45px;
+  }
+  #taglist {
+    position: relative;
+    left: 70px;
+  }
+  #search {
+    position: relative;
+    left: 95px;
+  }
   #login {
     position: relative;
-    left: 350px;
+    left: 120px;
   }
 }

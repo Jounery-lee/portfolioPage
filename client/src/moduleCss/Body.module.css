@@ -14,7 +14,6 @@
   border: white 2px solid;
     border-image: linear-gradient(to right, red, orange);
   border-image-slice: 1;
-
 }
 
 #clickedBody {
@@ -54,23 +53,31 @@
 }
 
 
-@media(max-width:768px){
+@media(max-width:375px){
   #body{  
-    padding-left: 30px;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 150px 300px 300px 300px;  
+    padding-left: 40px;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 150px 130px 130px 130px;
+    gap: 40px;  
   }
 
+  #body div {
+    font-size: 15px;
+  }
+  
 .bodyTitle {
   grid-area: 1 / 1 / span 1 / span 2;
 }
 
 #clickedBody {
-  padding: 100px;
+  border: 5px transparent solid;
+  border-image: linear-gradient(to right, red, orange);
+  border-image-slice: 1;
+  padding: 50px;
   font-size: 20px;
-  left: 45px;
-  width: 450px;
-  height: 400px;
+  left: 35px;
+  width: 200px;
+  height: 200px;
   overflow-y: auto;
 }
 }

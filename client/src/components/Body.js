@@ -53,7 +53,7 @@ function Body({ data , scrollTop}) {
       </div>
       <div
         id={style.clickedBody}
-        style={{ opacity: isClicked, zIndex: zindex, top: window.innerWidth >800 ? scrollTop-800 : scrollTop-1200}}
+        style={{ opacity: isClicked, zIndex: zindex, top: window.innerWidth >800 ? scrollTop-800 : scrollTop-600}}
         onClick={onClick}
       >
         <a href={content}>{content}</a>
